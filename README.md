@@ -34,3 +34,12 @@ Bright Data SERP API 搜索 provider，注册进 DSH 的 `ctx.web` seam。与
 
 strategy 链里把 `brightdata` 加进 backends（Settings 的 strategy 分区或
 `~/.dsh/.dsh-web-search-strategy.json`）即可参与 fallback/parallel。
+
+## 更新日志
+
+### 1.0.1
+
+- 修复：Google html SERP 改版后有机结果不再以"绝对 URL 锚点 + `<h3>` 标题"结构出现，
+  html 解析器恒定解析出 0 条（报 `parsed 0 results from html SERP`）。
+- 现将默认 `dataFormat` 从 `html` 改为 `markdown`（Bright Data 服务端提取，不受
+  Google 标记变化影响）。如仍需 html 解析，可在插件配置中显式传 `dataFormat: "html"`。

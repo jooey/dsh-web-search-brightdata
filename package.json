@@ -1,6 +1,6 @@
 {
 	"name": "dsh-web-search-brightdata",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "DSH web plugin: Bright Data SERP API search provider for ctx.web with a managed multi-key pool (per-key add/remove/enable/test from Settings), zone config, rotation, and cooldown failover",
 	"type": "module",
 	"main": "lib/index.js",
