@@ -1,6 +1,6 @@
 {
 	"name": "dsh-web-search-brightdata",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "DSH web plugin: Bright Data SERP API search provider for ctx.web with a managed multi-key pool (per-key add/remove/enable/test from Settings), zone config, rotation, and cooldown failover",
 	"type": "module",
 	"main": "lib/index.js",
@@ -30,6 +30,23 @@
 		"@deepseek-ai/dsh-web": "^0.1.0-rc.7",
 		"@deepseek-ai/dsh-credentials": "^0.1.0-rc.7",
 		"@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.7"
+	},
+	"peerDependenciesMeta": {
+		"@deepseek-ai/cordis": {
+			"optional": true
+		},
+		"@deepseek-ai/schemastery": {
+			"optional": true
+		},
+		"@deepseek-ai/dsh-web": {
+			"optional": true
+		},
+		"@deepseek-ai/dsh-credentials": {
+			"optional": true
+		},
+		"@deepseek-ai/dsh-typert-protocol": {
+			"optional": true
+		}
 	},
 	"dsh": {
 		"client": {
